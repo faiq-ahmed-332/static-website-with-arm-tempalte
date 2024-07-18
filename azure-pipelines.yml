@@ -8,8 +8,8 @@ variables:
   resourceGroupName: 'staticWebAppResourceGroup'
   storageAccountName: 'stwebappdevuks01'
   location: 'uk south'
-  cdnProfileName: 'cdn-profile-123'
-  cdnEndpointName: 'cdn-profile-123'
+  cdnProfileName: 'cdnWebApp'
+  cdnEndpointName: 'cdnWebApp'
 
 steps:
 - checkout: self
