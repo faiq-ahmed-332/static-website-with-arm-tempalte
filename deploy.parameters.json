@@ -9,10 +9,10 @@
       "value": "UK South"
     },
     "cdnProfileName": {
-      "value": "cdn-profile-123"
+      "value": "cdnWebApp"
     },
     "cdnEndpointName": {
-      "value": "cdn-profile-123"
+      "value": "cdnWebApp"
     }
   }
 }
