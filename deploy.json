@@ -29,14 +29,6 @@
         "name": "Standard_Microsoft"
       },
       "properties": {
-        "originHostHeader": "[concat(parameters('storageAccountName'), '.blob.core.windows.net')]"
-      }
-    },
-    {
-      "type": "Microsoft.Cdn/profiles/endpoints",
-      "apiVersion": "2021-06-01",
-      "name": "[format('{0}/{1}', parameters('cdnProfileName'), parameters('cdnEndpointName'))]",
-      "properties": {
         "enabled": "bool",
         "hostName": "string",
         "httpPort": "int",
@@ -49,6 +41,11 @@
         "privateLinkResourceId": "string",
         "weight": "int"
       },
+    },
+    {
+      "type": "Microsoft.Cdn/profiles/endpoints",
+      "apiVersion": "2021-06-01",
+      "name": "[format('{0}/{1}', parameters('cdnProfileName'), parameters('cdnEndpointName'))]",
       "location": "[parameters('cdnLocation')]",
       "dependsOn": [
         "[resourceId('Microsoft.Cdn/profiles', parameters('cdnProfileName'))]"
