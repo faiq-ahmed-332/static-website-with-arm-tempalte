@@ -32,10 +32,7 @@
       },
       "location": {
         "type": "string",
-        "defaultValue": "UK South",
-        "allowedValues": [
-          "UK West"
-        ],
+        "defaultValue": "[resourceGroup().location]",
         "metadata": {
           "description": "The location of the storage account"
         }
