@@ -10,6 +10,7 @@ variables:
   location: 'uk south'
 
 steps:
+- checkout: self
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
@@ -23,7 +24,7 @@ steps:
     csmParametersFile: '$(System.DefaultWorkingDirectory)/deploy.parameters.json'
     deploymentMode: 'Incremental'
 
-- checkout: self
+
 - task: AzureCLI@2
   inputs:
     azureSubscription: 'static-webapp-service-connection'
