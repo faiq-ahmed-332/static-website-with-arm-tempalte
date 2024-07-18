@@ -23,11 +23,10 @@ steps:
     csmParametersFile: '$(System.DefaultWorkingDirectory)/deploy.parameters.json'
     deploymentMode: 'Incremental'
 
-- task: AzureCLI@2
-  inputs:
-    azureSubscription: 'static-webapp-service-connection'
-    scriptType: 'bash'
-    scriptLocation: 'inlineScript'
-    inlineScript: |
-      az storage blob upload-batch -d '$web' -s $(Build.SourcesDirectory)/static-website --account-name $(storageAccountName)
-  displayName: 'Upload Static Website'
+- task: CopyFiles@2
+  displayName: 'Copy deployment content'
+  inputs: 
+    SourceFolder: '$(Build.SourcesDirectory)/website-static'
+    contents: '**\*' 
+    targetFolder: $(Build.ArtifactStagingDirectory)/website-static
+    cleanTargetFolder: true
