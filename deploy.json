@@ -27,9 +27,6 @@
       "location": "[parameters('cdnLocation')]",
       "sku": {
         "name": "Standard_Microsoft"
-      },
-      "properties": {
-        "originHostHeader": "[concat(parameters('storageAccountName'), '.blob.core.windows.net')]"
       }
     },
     {
@@ -43,6 +40,7 @@
       "properties": {
         "isHttpAllowed": true,
         "isHttpsAllowed": true,
+        "originHostHeader": "[concat(parameters('storageAccountName'), '.blob.core.windows.net')]"
         "origins": [
           {
             "name": "origin1",
