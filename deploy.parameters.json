@@ -13,6 +13,9 @@
     },
     "cdnEndpointName": {
       "value": "cdnWebApp"
+    },
+    "cdnLocation": {
+      "value": "westeurope"
     }
   }
 }

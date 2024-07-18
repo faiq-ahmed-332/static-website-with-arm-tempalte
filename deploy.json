@@ -24,7 +24,7 @@
       "type": "Microsoft.Cdn/profiles",
       "apiVersion": "2021-06-01",
       "name": "[parameters('cdnProfileName')]",
-      "location": "[resourceGroup().location]",
+      "location": "[parameters('cdnLocation')]",
       "sku": {
         "name": "Standard_Microsoft"
       },
@@ -36,7 +36,7 @@
       "type": "Microsoft.Cdn/profiles/endpoints",
       "apiVersion": "2021-06-01",
       "name": "[format('{0}/{1}', parameters('cdnProfileName'), parameters('cdnEndpointName'))]",
-      "location": "[resourceGroup().location]",
+      "location": "[parameters('cdnLocation')]",
       "dependsOn": [
         "[resourceId('Microsoft.Cdn/profiles', parameters('cdnProfileName'))]"
       ],
