@@ -14,7 +14,7 @@ steps:
 
 - task: AzureCLI@2
   inputs:
-    azureSubscription: 'static-webapp-service-connection'
+    azureSubscription: 'webapp-service-connection'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
