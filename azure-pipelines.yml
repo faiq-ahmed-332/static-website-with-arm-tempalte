@@ -9,7 +9,7 @@ variables:
   storageAccountName: 'stwebappdevuks01'
   location: 'uk south'
   cdnProfileName: 'cdnWebApp'
-  cdnEndpointName: 'cdnWebApp'
+  cdnEndpointName: 'cdnWebAppEndPoint'
 
 steps:
 - checkout: self
