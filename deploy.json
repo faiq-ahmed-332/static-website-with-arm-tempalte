@@ -40,7 +40,7 @@
       "properties": {
         "isHttpAllowed": true,
         "isHttpsAllowed": true,
-        "originHostHeader": "[concat(parameters('storageAccountName'), '.blob.core.windows.net')]"
+        "originHostHeader": "[concat(parameters('storageAccountName'), '.blob.core.windows.net')]",
         "origins": [
           {
             "name": "origin1",
