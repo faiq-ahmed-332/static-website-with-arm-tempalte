@@ -15,14 +15,14 @@ steps:
 - checkout: self
 
 - task: AzureCLI@2
-        displayName: 'Create Resource Group'
+        action: 'Create Resource Group'
         inputs:
           azureSubscription: 'webapp-service-connection'
           scriptType: 'bash'
           scriptLocation: 'inlineScript'
           inlineScript: az deployment sub create --location "$(LOCATION)" --template-file "$(Build.SourcesDirectory)/rg-deploy.json" --parameters "$(Build.SourcesDirectory)/rg-deploy.parameters.json"
 
-          
+
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
