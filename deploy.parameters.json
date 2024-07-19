@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "storageAccountName": {
-      "value": "st-webapp-dev-uks01"
+      "value": "stwebappdevuks01"
     },
     "location": {
       "value": "UK South"
