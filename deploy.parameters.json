@@ -16,6 +16,12 @@
     },
     "cdnLocation": {
       "value": "westeurope"
+    },
+    "resourceGroupName":{
+      "value": "rg-webapp-test"
+    },
+    "resourceGroupLocation":{
+      "value": "uk south"
     }
   }
 }
