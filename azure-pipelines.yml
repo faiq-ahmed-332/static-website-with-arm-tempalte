@@ -5,7 +5,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  resourceGroupName: 'rg-webapp-test'
+  resourceGroupName: 'staticWebAppResourceGroup'
   storageAccountName: 'stwebappdevuks01'
   location: 'uk south'
   cdnProfileName: 'cdnWebApp'
