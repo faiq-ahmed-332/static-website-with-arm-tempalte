@@ -3,16 +3,16 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "storageAccountName": {
-      "value": "stwebappdevuks01"
+      "value": "st-webapp-dev-uks01"
     },
     "location": {
       "value": "UK South"
     },
     "cdnProfileName": {
-      "value": "cdnWebApp"
+      "value": "cdn-webapp-dev"
     },
     "cdnEndpointName": {
-      "value": "cdnNottingHillEP"
+      "value": "cdn-webapp-dev-ep"
     },
     "cdnLocation": {
       "value": "westeurope"
