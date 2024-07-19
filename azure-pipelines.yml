@@ -20,8 +20,8 @@ steps:
     resourceGroupName: '$(resourceGroupName)'
     location: '$(location)'
     templateLocation: 'Linked artifact'
-    csmFile: '$(System.DefaultWorkingDirectory)/deploy.json'
-    csmParametersFile: '$(System.DefaultWorkingDirectory)/deploy.parameters.json'
+    csmFile: '$(System.DefaultWorkingDirectory)/rg-deploy.json'
+    csmParametersFile: '$(System.DefaultWorkingDirectory)/rg-deploy.parameters.json'
  
 
 
