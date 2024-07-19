@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "storageAccountName": {
-      "value": "stwebappdevuks01"
+      "value": "stwebappdeveuwe01"
     },
     "location": {
       "value": "westeurope"
