@@ -22,9 +22,6 @@
         "defaultValue": "uk south",
         "metadata": {
           "description": "The location of the resource group"
-        },
-        "enableADS": {
-            "value": "false"
         }
       }
     }
