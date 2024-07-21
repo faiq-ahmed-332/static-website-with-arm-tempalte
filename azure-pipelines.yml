@@ -8,7 +8,9 @@ variables:
   resourceGroupName: 'staticWebAppResourceGroup'
   storageAccountName: 'stwebappdevuks01'
   location: 'uk south'
-
+  cdnProfileName: 'cdnWebApp'
+  cdnEndpointName: 'cdnWebApp'
+  
 steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
@@ -23,10 +25,9 @@ steps:
     csmParametersFile: '$(System.DefaultWorkingDirectory)/deploy.parameters.json'
     deploymentMode: 'Incremental'
 
-- checkout: self
 - task: AzureCLI@2
   inputs:
-    azureSubscription: 'static-webapp-service-connection'
+    azureSubscription: 'webapp-service-connection'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
