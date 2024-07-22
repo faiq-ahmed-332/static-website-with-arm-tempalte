@@ -5,7 +5,7 @@ This read-me defines the steps taken in order to deploy a static website on azur
 * Setting up Azure ResourceGroup thourgh ARM Template (in Progress)
 * Setting up Azure Storage Account with Static Website hosting.
 * Configuring Azure CDN through the ARM template to serve the Static Website hosting.
-* Setting Up Canary Deployment using Azure App Service Deployment slots (Todo)
+* Setting Up Blue Green Deployment using Azure App Service Deployment slots (Todo)
 
 
 Files and their Purpose:
